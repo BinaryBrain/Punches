@@ -17,7 +17,7 @@ HTML
   <div class="white">
     <div class="in">
       <div class="content">
-	  <!-- Put your content here if you want to. -->
+	<!-- Put your content here if you want to. -->
       </div>
     </div>
   </div>
@@ -32,6 +32,6 @@ LESS
 ```
 
 Dependencies
-------------
+============
 
 Punches needs [LESS](http://lesscss.org) to work.
