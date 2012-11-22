@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Not important. For test purpose only. */
+body {
+  background-color: #aaa;
+  background-image: url("brushed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#punch {
+  /* Create the style for the Punch */
+
+  /* Stuff you may want to change */
+
+  left: 30px;
+  top: 50px;
+  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  /* You can fix the background to the top/left corner of your page */
+
+  /* This should create a cool effect if you have a grid of little punches (about 30px) */
+
+}
+#punch .punch-white {
+  box-shadow: inset 0px -15px 15px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#punch .punch-white .punch-in {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  width: 258px;
+  height: 258px;
+  z-index: 1;
+  border-radius: 129px;
+  background: url("mirrors.jpg");
+  background-position: 0 0;
+  background-position: -30px -50px;
+  box-shadow: inset 0px 30px 60px rgba(0, 0, 0, 0.8);
+}
+#punch .punch-white .punch-in .punch-content, #punch .punch-white .punch-in .punch-content * {
+  overflow: hidden;
+  border-radius: 129px;
+  height: 258px;
+  width: 258px;
+}
+#punch .punch-shadow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#punch2 {
+  /* Stuff you may want to change */
+
+  left: 550px;
+  top: 100px;
+  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  /* You can fix the background to the top/left corner of your page */
+
+  /* This should create a cool effect if you have a grid of little punches (about 30px) */
+
+}
+#punch2 .punch-white {
+  box-shadow: inset 0px -15px 15px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#punch2 .punch-white .punch-in {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  width: 258px;
+  height: 258px;
+  z-index: 1;
+  border-radius: 129px;
+  background: url("mirrors.jpg");
+  background-position: 0 0;
+  background-position: -550px -100px;
+  box-shadow: inset 0px 30px 60px rgba(0, 0, 0, 0.8);
+}
+#punch2 .punch-white .punch-in .punch-content, #punch2 .punch-white .punch-in .punch-content * {
+  overflow: hidden;
+  border-radius: 129px;
+  height: 258px;
+  width: 258px;
+}
+#punch2 .punch-shadow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#punch3 {
+  /* Stuff you may want to change */
+
+  left: 250px;
+  top: 330px;
+  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  /* You can fix the background to the top/left corner of your page */
+
+  /* This should create a cool effect if you have a grid of little punches (about 30px) */
+
+}
+#punch3 .punch-white {
+  box-shadow: inset 0px -15px 15px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#punch3 .punch-white .punch-in {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  width: 258px;
+  height: 258px;
+  z-index: 1;
+  border-radius: 129px;
+  background: #666666;
+  background-position: 0 0;
+  box-shadow: inset 0px 30px 60px rgba(0, 0, 0, 0.8);
+}
+#punch3 .punch-white .punch-in .punch-content, #punch3 .punch-white .punch-in .punch-content * {
+  overflow: hidden;
+  border-radius: 129px;
+  height: 258px;
+  width: 258px;
+}
+#punch3 .punch-shadow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}

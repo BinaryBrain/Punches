@@ -1,0 +1,27 @@
+@import "../punches";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Not important. For test purpose only. */
+body {
+  background-color: #aaa;
+  background-image: url("brushed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#punch {
+  /* Create the style for the Punch */
+  .punch-mixin(30px, 50px, 300px, url("mirrors.jpg"), true);
+}
+
+#punch2 {
+  .punch-mixin(550px, 100px, 300px, url("mirrors.jpg"), true);
+}
+
+#punch3 {
+  .punch-mixin(250px, 330px, 300px, #666);
+}
