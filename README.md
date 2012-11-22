@@ -1,7 +1,7 @@
 Punches
 =======
 
-Create punches in your web pages with CSS3.
+Punches is a tool to create holes in your web pages. It works only with some CSS3 and a few lines of HTML.
 
 Usage
 =====
@@ -9,8 +9,7 @@ Usage
 You only need the file `punches.less` to make it work.  
 Other files are for testing purpose.
 
-HTML
-----
+### HTML
 
 ```
 <div class="punch" style="">
@@ -24,8 +23,7 @@ HTML
 </div>
 ```
 
-LESS
-----
+### LESS
 
 ```
 @import "punches";
