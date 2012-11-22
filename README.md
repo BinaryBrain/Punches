@@ -25,16 +25,17 @@ Other files are for example and testing purpose.
 
 ### LESS
 
-First of all, you have to import the style file.
+First of all, you have to import the style file.  
 Then, you just have to call the mixin.
 
 ```
 @import "punches";
 
 #your-punch {
-  .punch-mixin(@left: 0px, @top: 0px, @size: 100px, @background: none, @grid: false, @z-index: 0);
+  .punch(@size: 100px, @left: 0px, @top: 0px, @background: none, @grid: false, @z-index: 0);
 }
 ```
+You can see that every parameters have default values. So, you can just call `.punch;` if you want to.
 
 Dependencies
 ============
