@@ -7,7 +7,7 @@ Usage
 =====
 
 You only need the file `punches.less` to make it work.  
-Other files are for testing purpose.
+Other files are for example and testing purpose.
 
 ### HTML
 
@@ -25,8 +25,15 @@ Other files are for testing purpose.
 
 ### LESS
 
+First of all, you have to import the style file.
+Then, you just have to call the mixin.
+
 ```
 @import "punches";
+
+#your-punch {
+  .punch-mixin(@left: 0px, @top: 0px, @size: 100px, @background: none, @grid: false, @z-index: 0);
+}
 ```
 
 Dependencies

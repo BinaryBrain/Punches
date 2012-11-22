@@ -1,63 +1,68 @@
-/* Stuff you'll want to change */
-@left: 50px;
-@top: 50px;
-@size: 450px;
-
-@sizeIn: @size*0.86;
-
-@shadowOffset: @size/20;
-@shadowSize: @size/20;
-@bgShadowOffset: @size/10;
-@bgShadowSize: @size/5;
-
-
-.punch, .white {
-  position: absolute;
+.punch-mixin(@left: 0px, @top: 0px, @size: 100px, @background: none, @grid: false, @z-index: 0) {
+  /* Stuff you may want to change */
+  @sizeIn: @size*0.86;
   
-  width: @size;
-  height: @size;
+  @shadowOffset: @size/20;
+  @shadowSize: @size/20;
+  @bgShadowOffset: @size/10;
+  @bgShadowSize: @size/5;
   
-  border-radius: @size/2;
-  
-  .in {
-    position: absolute;
-    top: (@size - @sizeIn)/2;
-    left: (@size - @sizeIn)/2;
-    
-    width: @sizeIn;
-    height: @sizeIn;
-    
-    border-radius: @sizeIn/2;
-    
-    background-color: #666;
-    background-repeat: no-repeat;
-
-
-    /* You can add a background here */
-    // background-image: url("");
-    
-    /* You can fix the background to the top/left corner of your page */
-    /* This can create a cool effect if you have a grid of little punches (about 30px) */
-    //background-position: -@left -@top;
-    
-    box-shadow: inset 0px @bgShadowOffset @bgShadowSize rgba(0,0,0,0.8);
-    
-    .content, .content * {
-      overflow: hidden;
-      border-radius: @sizeIn/2;
-      height: @sizeIn;
-      width: @sizeIn;
-    }
-  }
-}
-
-.punch {
   left: @left;
   top: @top;
-
+  
   box-shadow: inset 0px @shadowOffset @shadowSize rgba(0,0,0,0.5);
-}
-
-.white {
-  box-shadow: inset 0px -@shadowOffset @shadowSize rgba(255,255,255,0.3);
+  
+  z-index: @z-index;
+  
+  .punch-shadow;
+  
+  .punch-white {
+    box-shadow: inset 0px -@shadowOffset @shadowSize rgba(255,255,255,0.3);
+    
+    .punch-shadow;
+    
+    .punch-in {
+      position: absolute;
+      top: (@size - @sizeIn)/2;
+      left: (@size - @sizeIn)/2;
+      
+      width: @sizeIn;
+      height: @sizeIn;
+      
+      z-index: @z-index + 1;
+      
+      border-radius: @sizeIn/2;
+      
+      background: @background;
+      .punch-grid(@grid);
+      
+      box-shadow: inset 0px @bgShadowOffset @bgShadowSize rgba(0,0,0,0.8);
+      
+      .punch-content, .punch-content * {
+        overflow: hidden;
+        border-radius: @sizeIn/2;
+        height: @sizeIn;
+        width: @sizeIn;
+      }
+    }
+  }
+  
+  .punch-shadow {
+    position: absolute;
+    
+    width: @size;
+    height: @size;
+    
+    border-radius: @size/2;
+  }
+  
+  .punch-grid (@grid) {
+    background-position: 0 0;
+  }
+  
+  /* You can fix the background to the top/left corner of your page */
+  /* This should create a cool effect if you have a grid of little punches (about 30px) */
+  .punch-grid (@grid) when (@grid = true) {
+    background-position: -@left -@top;
+  }
 }
