@@ -16,7 +16,7 @@ Other files are for testing purpose.
   <div class="white">
     <div class="in">
       <div class="content">
-	<!-- Put your content here if you want to. -->
+	    <!-- Put your content here if you want to. -->
       </div>
     </div>
   </div>
