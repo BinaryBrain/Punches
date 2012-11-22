@@ -4,9 +4,9 @@ Punches
 Punches is a tool to create holes in your web pages. It works only with some CSS3 and a few lines of HTML.
 
 Usage
-=====
+-----
 
-You only need the file `punches.less` to make it work.  
+You only need the _punches.less_ file to make it work.  
 Other files are for example and testing purpose.
 
 ### HTML
@@ -38,6 +38,12 @@ Then, you just have to call the mixin.
 You can see that every parameters have default values. So, you can just call `.punch;` if you want to.
 
 Dependencies
-============
+------------
 
 Punches needs [LESS](http://lesscss.org) to work.
+
+Example
+-------
+
+To see the example, just download the folder _example_.  
+Note that the less code has been already compiled for you.
