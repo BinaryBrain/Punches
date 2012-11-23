@@ -12,7 +12,7 @@ Other files are for example and testing purpose.
 ### HTML
 
 ```
-<div class="punch" style="">
+<div class="punch">
   <div class="white">
     <div class="in">
       <div class="content">
