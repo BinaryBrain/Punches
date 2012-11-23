@@ -3,9 +3,6 @@ Punches
 
 Punches is a tool to create holes in your web pages. It works only with some CSS3 and a few lines of HTML.
 
-Result
-------
-![Syte GitHub](https://github.com/rigoneri/syte/blob/master/readme-imgs/f-3.png?raw=true)
 
 Result
 ------
