@@ -3,6 +3,14 @@ Punches
 
 Punches is a tool to create holes in your web pages. It works only with some CSS3 and a few lines of HTML.
 
+Result
+------
+Here's an example of what you can do with Punches.
+
+![Punches Screenshot](https://github.com/BinaryBrain/Punches/master/readme-images/screenshot2.png?raw=true)
+
+_Note: It use only two images. The black background and the brushed metal._
+
 Usage
 -----
 
