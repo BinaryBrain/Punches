@@ -5,9 +5,14 @@ Punches is a tool to create holes in your web pages. It works only with some CSS
 
 Result
 ------
+![Syte GitHub](https://github.com/rigoneri/syte/blob/master/readme-imgs/f-3.png?raw=true)
+
+Result
+------
+
 Here's an example of what you can do with Punches.
 
-![Punches Screenshot](https://github.com/BinaryBrain/Punches/master/readme-images/screenshot2.png?raw=true)
+![Punches Screenshot](https://github.com/BinaryBrain/Punches/blob/master/readme-images/screenshot2.png?raw=true)
 
 _Note: It use only two images. The black background and the brushed metal._
 
