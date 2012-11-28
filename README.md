@@ -22,10 +22,10 @@ Other files are for example and testing purpose.
 ### HTML
 
 ```
-<div class="punch">
-  <div class="white">
-    <div class="in">
-      <div class="content">
+<div id="your-punch" class="punch">
+  <div class="punch-white">
+    <div class="punch-in">
+      <div class="punch-content">
 	    <!-- Put your content here if you want to. -->
       </div>
     </div>
@@ -42,7 +42,8 @@ Then, you just have to call the mixin.
 @import "punches";
 
 #your-punch {
-  .punch(@size: 100px, @left: 0px, @top: 0px, @background: none, @grid: false, @z-index: 0);
+  //.punch(@size: 100px, @left: 0px, @top: 0px, @background: none, @grid: false, @z-index: 0);
+  .punch(150px, 20px, 20px, black);
 }
 ```
 You can see that every parameters have default values. So, you can just call `.punch;` if you want to.
