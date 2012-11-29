@@ -1,48 +1,48 @@
-.punch(@size: 100px, @left: 0px, @top: 0px, @background: none, @grid: false, @z-index: 0) {
+.punch(@punch-size: 100px, @punch-left: 0px, @punch-top: 0px, @punch-background: none, @punch-grid: false, @punch-z-index: 0) {
   /* Stuff you may want to change */
-  @sizeIn: @size*0.86;
+  @punch-sizeIn: @punch-size*0.86;
   
-  @shadowOffset: @size/20;
-  @shadowSize: @size/20;
-  @bgShadowOffset: @size/10;
-  @bgShadowSize: @size/5;
+  @punch-shadowOffset: @punch-size/20;
+  @punch-shadowSize: @punch-size/20;
+  @punch-bgShadowOffset: @punch-size/10;
+  @punch-bgShadowSize: @punch-size/5;
   
-  left: @left;
-  top: @top;
+  left: @punch-left;
+  top: @punch-top;
   
-  box-shadow: inset 0px @shadowOffset @shadowSize rgba(0,0,0,0.5);
+  box-shadow: inset 0px @punch-shadowOffset @punch-shadowSize rgba(0,0,0,0.5);
   
-  z-index: @z-index;
+  z-index: @punch-z-index;
   
   .punch-shadow;
   
   .punch-white {
-    box-shadow: inset 0px -@shadowOffset @shadowSize rgba(255,255,255,0.3);
+    box-shadow: inset 0px -@punch-shadowOffset @punch-shadowSize rgba(255,255,255,0.3);
     
     .punch-shadow;
     
     .punch-in {
       position: absolute;
-      top: (@size - @sizeIn)/2;
-      left: (@size - @sizeIn)/2;
+      top: (@punch-size - @punch-sizeIn)/2;
+      left: (@punch-size - @punch-sizeIn)/2;
       
-      width: @sizeIn;
-      height: @sizeIn;
+      width: @punch-sizeIn;
+      height: @punch-sizeIn;
       
-      z-index: @z-index + 1;
+      z-index: @punch-z-index + 1;
       
-      border-radius: @sizeIn/2;
+      border-radius: @punch-sizeIn/2;
       
-      background: @background;
-      .punch-grid(@grid);
+      background: @punch-background;
+      .punch-grid(@punch-grid);
       
-      box-shadow: inset 0px @bgShadowOffset @bgShadowSize rgba(0,0,0,0.8);
+      box-shadow: inset 0px @punch-bgShadowOffset @punch-bgShadowSize rgba(0,0,0,0.8);
       
-      .punch-content, .punch-content * {
+      .punch-content {
         overflow: hidden;
-        border-radius: @sizeIn/2;
-        max-height: @sizeIn;
-        max-width: @sizeIn;
+        border-radius: @punch-sizeIn/2;
+        max-height: @punch-sizeIn;
+        max-width: @punch-sizeIn;
       }
     }
   }
@@ -50,19 +50,19 @@
   .punch-shadow {
     position: absolute;
     
-    width: @size;
-    height: @size;
+    width: @punch-size;
+    height: @punch-size;
     
-    border-radius: @size/2;
+    border-radius: @punch-size/2;
   }
   
-  .punch-grid (@grid) {
+  .punch-grid (@punch-grid) {
     background-position: 0 0;
   }
   
   /* You can fix the background to the top/left corner of your page */
   /* This should create a cool effect if you have a grid of little punches (about 30px) */
-  .punch-grid (@grid) when (@grid = true) {
-    background-position: -@left -@top;
+  .punch-grid (@punch-grid) when (@punch-grid = true) {
+    background-position: -@punch-left -@punch-top;
   }
 }
